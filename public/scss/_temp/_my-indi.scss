@@ -1,0 +1,7 @@
+// my-indi.scss
+#indi-wrap{ position:fixed; bottom:0; left:0; width:100%; @include conUnit(height, 50); background-color:#fff;
+  &>div{ float:left; width:20%; height:100%; border:1px solid #eee; box-sizing:border-box; 
+    &>span{ display:block; text-align:center; @include conUnit(font-size, 20); @include conUnit(line-height, 50); }
+  &.on>span{ @include conUnit(padding, 5); box-sizing:border-box; background-color:#d60815; @include conUnit(line-height, 40); }
+  }
+}

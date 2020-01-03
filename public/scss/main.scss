@@ -1,0 +1,16 @@
+// main.scss
+
+@import "_basic/var";
+@import "_basic/mixin_02";
+@import "_basic/etc";
+
+#wrap{ width:100%; height:auto; }
+
+@import "_temp/my-header";
+@import "_temp/my-indi";
+@import "_temp/my-section";
+@import "_temp/my-reserve";
+@import "_temp/my-checkIn";
+@import "_temp/my-timeCheck";
+@import "_temp/my-event";
+@import "_temp/my-footer";

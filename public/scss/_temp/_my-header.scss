@@ -1,0 +1,53 @@
+// my-header.scss
+$c:3; $n:6;
+#headBox{ position:fixed; top:0; left:0; width:100%; @include conUnit(height, 200); background-color:#fff;
+  &>#first-gnb{ position:absolute; bottom:0; left:0; width:100%; height:70%; 
+    &>.first-wrap{ width:80%; height:100%; margin:auto;
+      &>h1{ float:left; width:20%; height:100%; background-image: url('../../img/logo.png'); background-position:50% 50%; background-size:contain; background-repeat:no-repeat; }
+      &>ul{ float:left; width:60%; height:100%; 
+      &:after{ content:" "; display:block; width:100%; height:100%; clear:both; }
+        &>li{ float:left; width:20%; height:100%; 
+        &:first-child{ margin-left:10%; }
+        &:last-child{ margin-right:10%; }
+          &>a{ display:block; @include fullBox; background-color:transparent; 
+            &>span{ display:block; text-align:center; @include conUnit(line-height, 140); @include conUnit(font-size, 25); color:#333; font-weight:bold; }
+            } //a
+          } //li
+        } //ul
+        &>.side-menu{ float:right; width:20%; height:100%;
+          &>a{ display:block; float:left; width:100% / $c; height:100%; 
+          &:nth-of-type(1){ background-image: url('../../img/chatbot.png'); background-position:50% 50%; background-size: 60%; background-repeat: no-repeat; }
+          &:nth-of-type(2){ background-image: url('../../img/my.png'); background-position:50% 50%; background-size: 40%; background-repeat: no-repeat; }
+          &:nth-of-type(3){ background-image: url('../../img/search.png'); background-position:50% 50%; background-size: 40%; background-repeat: no-repeat; }
+          } //a
+        } //side-menu
+      } //first-gnb
+    } //first-wrap 
+    &>#secound-gnb{ position:absolute; top:0; left:0; width:100%; height:30%; background-color:#f7f7f7; 
+      &>.secound-wrap{ width:80%; height:100%; margin:auto;
+        &>.left-menu{ float:left; width:20%; height:100%; 
+          &>ul{ @include fullBox; 
+            &>li{ float:left; position:relative; width:100% / $c; height:100%; 
+              &>a{ display:block; width:auto; height:100%; 
+                &>span{ display:block; text-align:center; @include conUnit(line-height, 60); @include conUnit(font-size, 13); color:#333; }
+              } //a
+            &:before{ content:" "; display:block; position:absolute; right:0; top:35%; width:0; height:30%; border-right:1px solid #777; box-sizing:border-box; }   
+            &:last-child:before{ display:none; }
+            } //li
+          } //ul
+        } //left-menu
+        &>.right-menu{ float:right; width:30%; height:100%; 
+          &>ul{ @include fullBox; 
+            &>li{ float:left; position:relative; width:90% / $n; height:100%;  
+              &>a{ display:block; width:auto; height:100%;
+                &>span{ display:block; text-align:center; @include conUnit(line-height, 60); @include conUnit(font-size, 13); color:#333; }
+              } //a
+            &:first-child{ margin-left:10%; }
+            &:nth-child(4):before{ content:" "; display:block; position:absolute; top:0; bottom:0; margin:auto; @include conUnit(width, 20); @include conUnit(height, 20); background-image: url('../../img/earth.png'); background-size:contain; background-position:50% 50%; background-repeat:no-repeat; }
+            &:nth-child(5):before{ content:" "; display:block; position:absolute; right:0; top:35%; width:0; height:30%; border-right:1px solid #777; box-sizing:border-box; text-decoration:underline; }
+            } //li
+          } //ul
+        } //right-menu
+      } //secound-wrap       
+    } //secound-gnb
+} //headBox
