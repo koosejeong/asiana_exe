@@ -39,10 +39,11 @@ $c:3; $n:6; $u:4;
               }
               &>li:last-child:before{ display:none; }
               }
-            } //ul
+            } //
           &:nth-child(3)>ul>li{ @include conUnit(height, 420); }
           } //li
         } //ul
+        &>.under-line{ display:none; position:relative; z-index:50; @include conUnit(top, 101); left:20%; margin-left:20%; width:100px; height:4px; background-color: #f00; }
         &>.side-menu{ float:right; width:20%; height:100%;
           &>a{ display:block; float:left; width:100% / $c; height:100%; 
           &:nth-of-type(1){ background-image: url('../../img/chatbot.png'); background-position:50% 50%; background-size: 60%; background-repeat: no-repeat; }
