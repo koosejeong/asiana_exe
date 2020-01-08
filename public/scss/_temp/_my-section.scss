@@ -1,2 +1,22 @@
 // my-section.scss
-#viewBox{ width:100%; @include conUnit(height, 1000); background-color:#555; }
+$no:6;
+#viewBox{ position:relative; @include conUnit(padding-top, 150); box-sizing:border-box; width:100%; @include conUnit(height, 1000); background-color:#555; 
+  &>.slide-area{ width:100%; height:40%; 
+    &>ul{ position:relative; @include fullBox; 
+      &>li{ position:absolute; top:0; left:0; width:100%; height:100%; 
+        &>a{ display:block; @include fullBox; }
+      } //li
+    } //ul
+    &>.indicator{ position:absolute; top:37%; left:50%; transform:translateX(-50%); width:15%; @include conUnit(height, 30); background-color:rgba(0,0,0,0.5); 
+      &>ul{ width:80%; height:100%; 
+        &>li{ float:left; width:10%; height:60%; transform:translateY(40%); border-radius:100%; margin-right:2%; background-color:#fff; 
+        &:first-child{ margin-left:5%; }
+        } //li
+      } //ul
+      &>button{ position:absolute; top:7px; right:3%; width:20%; height:100%; background-color:transparent; 
+        &>i{ @include fullBox; @include conUnit(font-size, 18); color:#fff; }
+      }
+    } //indicator
+  } //slide-area
+  &>.my-airplan-confirm{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80%; height:20%; background-color:#adf; }
+} //viewBox

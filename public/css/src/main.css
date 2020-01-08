@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   width: 100%;
   height: 150px;
   height: 9.375rem;
@@ -328,10 +329,77 @@
       line-height: 2.5rem; }
 
 #viewBox {
+  position: relative;
+  padding-top: 150px;
+  padding-top: 9.375rem;
+  box-sizing: border-box;
   width: 100%;
   height: 1000px;
   height: 62.5rem;
   background-color: #555; }
+  #viewBox > .slide-area {
+    width: 100%;
+    height: 40%; }
+    #viewBox > .slide-area > ul {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: auto; }
+      #viewBox > .slide-area > ul > li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+        #viewBox > .slide-area > ul > li > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+    #viewBox > .slide-area > .indicator {
+      position: absolute;
+      top: 37%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15%;
+      height: 30px;
+      height: 1.875rem;
+      background-color: rgba(0, 0, 0, 0.5); }
+      #viewBox > .slide-area > .indicator > ul {
+        width: 80%;
+        height: 100%; }
+        #viewBox > .slide-area > .indicator > ul > li {
+          float: left;
+          width: 10%;
+          height: 60%;
+          transform: translateY(40%);
+          border-radius: 100%;
+          margin-right: 2%;
+          background-color: #fff; }
+          #viewBox > .slide-area > .indicator > ul > li:first-child {
+            margin-left: 5%; }
+      #viewBox > .slide-area > .indicator > button {
+        position: absolute;
+        top: 7px;
+        right: 3%;
+        width: 20%;
+        height: 100%;
+        background-color: transparent; }
+        #viewBox > .slide-area > .indicator > button > i {
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          font-size: 18px;
+          font-size: 1.125rem;
+          color: #fff; }
+  #viewBox > .my-airplan-confirm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 20%;
+    background-color: #adf; }
 
 #reserveBox {
   width: 100%;
