@@ -5,18 +5,26 @@ $no:6;
     &>ul{ position:relative; @include fullBox; 
       &>li{ position:absolute; top:0; left:0; width:100%; height:100%; 
         &>a{ display:block; @include fullBox; }
+      &:first-child{ z-index:1; }
       } //li
     } //ul
-    &>.indicator{ position:absolute; top:37%; left:50%; transform:translateX(-50%); width:15%; @include conUnit(height, 30); background-color:rgba(0,0,0,0.5); 
+    &>.indicator{ position:absolute; top:37%; left:50%; z-index:300; transform:translateX(-50%); @include conUnit(width, 150); @include conUnit(height, 30); background-color:rgba(0,0,0,0.5); 
       &>ul{ width:80%; height:100%; 
-        &>li{ float:left; width:10%; height:60%; transform:translateY(40%); border-radius:100%; margin-right:2%; background-color:#fff; 
+        &>li{ float:left; @include conUnit(width, 15); @include conUnit(height, 15); transform:translateY(50%); border-radius:100%; margin-right:2%; background-color:#fff; 
         &:first-child{ margin-left:5%; }
+          &>a{ display:block; @include fullBox; border-radius:100%;
+          &.action{ background-color:#333; }
+          }
         } //li
       } //ul
-      &>button{ position:absolute; top:7px; right:3%; width:20%; height:100%; background-color:transparent; 
-        &>i{ @include fullBox; @include conUnit(font-size, 18); color:#fff; }
-      }
+      &>.play-area{ position:absolute; top:7px; right:3%; width:20%; height:100%; 
+        &>button{ @include fullBox; background-color:transparent; 
+          &>i{ @include fullBox; @include conUnit(font-size, 15); color:#fff; }
+        } //play
+        &>.play{ display:none; }
+      } //play-area
+      
     } //indicator
   } //slide-area
-  &>.my-airplan-confirm{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80%; height:20%; background-color:#adf; }
+  &>.my-airplan-confirm{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:500; width:80%; height:20%; background-color:#adf; }
 } //viewBox
