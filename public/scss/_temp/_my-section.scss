@@ -26,5 +26,56 @@ $no:6;
       
     } //indicator
   } //slide-area
-  &>.my-airplan-confirm{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:500; width:80%; height:20%; background-color:#adf; }
+  &>.my-airplan-confirm{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:500; width:80%; height:20%; background-color:#fff;
+    &>.high-area{ width:100%; height:50%; 
+      &>.wrap-box{ position:relative; width:100%; height:100%; @include conUnit(padding, 20); box-sizing:border-box;  
+        &>.one-box{ position:relative; float:left; width:15%; height:100%; margin-right:3%; background-color:#eee; 
+        &>.mileage{ float:left; display:block; width:60%; height:100%; text-align:center; @include conUnit(line-height, 60); @include conUnit(font-size, 18); }
+        &>.tab-slide{ position:relative; float:left; display:block; width:40%; height:100%;  
+          &>.slide-bar{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80%; height:30%; background-color:#ddd; //#ea838a;
+            &>.slide-btn{ position:absolute; left:0; top:-25%; width:60%; height:150%; border:1px solid #ddd; box-sizing:border-box; border-radius:3px; background-color:#fff; cursor:pointer;
+              &>span{ display:block; text-align:center; @include conUnit(font-size, 10);  color:#333; @include conUnit(line-height, 27); text-transform:uppercase; }
+            } //slide-btn
+          } //slide-bar
+        } //tab-slide
+      } //one-box
+       &>.two-box{ float:left; width:30%; height:100%; margin-right:3%;
+        &>.round-trip{ float:left; width:33.333333%; height:100%; background-color:#f00;}
+        &>.one-way{ float:left; position:relative; width:33.333333%; height:100%; background-color:#eee;
+        &:after{ content:" "; display:block; position:absolute; top:0; bottom:0; right:0; margin:auto; width:0; height:50%; border-right:1px solid #555; }
+        }
+        &>.binary-section{ float:left; width:33.333333%; height:100%; background-color:#eee;}
+        & span{ display:block; text-align:center; @include conUnit(line-height, 60); @include conUnit(font-size, 18); }
+        &>div.on>span{ background-color: #f00; color:#fff; }
+      } //two-box
+       &>.star-area{ float:left; width:5%; height:100%; margin-right:3%; background-color:#fff; 
+        &>i{ text-align:center; @include conUnit(line-height, 60); @include conUnit(font-size, 18); color:#777; }
+        &>.hidden-area-star{ display:none; position:absolute; left:50%; transform:translateX(-50%); bottom:-5%; @include conUnit(width, 600); @include conUnit(height, 120); border:1px solid #eed; box-sizing:border-box; background-color:#fff;}
+        &.action>i{ color:#f00; }
+        } //star-area 
+        &>.hidden-area{ display:none; position:absolute; @include conUnit(right, 20); @include conUnit(bottom, 20); @include conUnit(width, 400); @include conUnit(height, 50);  
+          &>.hidden-one{ float:left; width:40%; height:100%; }
+          &>.hidden-two{ float:left; width:60%; height:100%; }
+          & span{ display:block; text-align:center; @include conUnit(line-height, 50); @include conUnit(font-size, 16); }
+        } //hidden-area
+      } //wrap-box
+    } //high-area
+    &>.low-area{ width:100%; height:50%; background-color:#fff; 
+     &>.wrap-box{ position:relative; width:100%; height:100%; @include conUnit(padding, 20); box-sizing:border-box;
+      &>.form-box{ float:left; width:16%; height:100%; margin-right:2%; border-bottom:2px solid #555; box-sizing:border-box; }
+      & form{ @include fullBox; 
+        &>fieldset{ @include fullBox;
+          &>input{ float:left; width:80%; height:100%; border:0; }          
+          &>button{ float:right; width:20%; height:100%; background-color:transparent; 
+            &>i{ text-align:center; @include conUnit(font-size, 20); color:#777; }
+            &>.icon-area{ @include fullBox; background-image: url('../../img/section/icon/main_icoset.png'); background-position:21% 3%; background-repeat:no-repeat; background-size:auto 500%; }
+          } //button
+        } //fieldset
+      } //form
+      &>.confirm{ float:right; width:10%; height:100%; background-color:#777; 
+        &>span{ display:block; text-align:center; @include conUnit(font-size, 20); color:#fff; }
+      }
+     } //wrap-box
+    } //low-area
+  } //my-airplan-confirm
 } //viewBox

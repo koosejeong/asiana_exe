@@ -31,7 +31,7 @@
   }
   indiA.on('click', function(e){
     e.preventDefault();
-    let myN = $(this).parent(indiLi).index();
+    myN = $(this).parent(indiLi).index();
     SlideAdd(myN);
   });
 

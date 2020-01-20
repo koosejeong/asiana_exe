@@ -420,7 +420,224 @@
     z-index: 500;
     width: 80%;
     height: 20%;
-    background-color: #adf; }
+    background-color: #fff; }
+    #viewBox > .my-airplan-confirm > .high-area {
+      width: 100%;
+      height: 50%; }
+      #viewBox > .my-airplan-confirm > .high-area > .wrap-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        padding: 1.25rem;
+        box-sizing: border-box; }
+        #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .one-box {
+          position: relative;
+          float: left;
+          width: 15%;
+          height: 100%;
+          margin-right: 3%;
+          background-color: #eee; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .one-box > .mileage {
+            float: left;
+            display: block;
+            width: 60%;
+            height: 100%;
+            text-align: center;
+            line-height: 60px;
+            line-height: 3.75rem;
+            font-size: 18px;
+            font-size: 1.125rem; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .one-box > .tab-slide {
+            position: relative;
+            float: left;
+            display: block;
+            width: 40%;
+            height: 100%; }
+            #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .one-box > .tab-slide > .slide-bar {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 80%;
+              height: 30%;
+              background-color: #ddd; }
+              #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .one-box > .tab-slide > .slide-bar > .slide-btn {
+                position: absolute;
+                left: 0;
+                top: -25%;
+                width: 60%;
+                height: 150%;
+                border: 1px solid #ddd;
+                box-sizing: border-box;
+                border-radius: 3px;
+                background-color: #fff;
+                cursor: pointer; }
+                #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .one-box > .tab-slide > .slide-bar > .slide-btn > span {
+                  display: block;
+                  text-align: center;
+                  font-size: 10px;
+                  font-size: 0.625rem;
+                  color: #333;
+                  line-height: 27px;
+                  line-height: 1.6875rem;
+                  text-transform: uppercase; }
+        #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .two-box {
+          float: left;
+          width: 30%;
+          height: 100%;
+          margin-right: 3%; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .two-box > .round-trip {
+            float: left;
+            width: 33.333333%;
+            height: 100%;
+            background-color: #f00; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .two-box > .one-way {
+            float: left;
+            position: relative;
+            width: 33.333333%;
+            height: 100%;
+            background-color: #eee; }
+            #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .two-box > .one-way:after {
+              content: " ";
+              display: block;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin: auto;
+              width: 0;
+              height: 50%;
+              border-right: 1px solid #555; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .two-box > .binary-section {
+            float: left;
+            width: 33.333333%;
+            height: 100%;
+            background-color: #eee; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .two-box span {
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            line-height: 3.75rem;
+            font-size: 18px;
+            font-size: 1.125rem; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .two-box > div.on > span {
+            background-color: #f00;
+            color: #fff; }
+        #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .star-area {
+          float: left;
+          width: 5%;
+          height: 100%;
+          margin-right: 3%;
+          background-color: #fff; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .star-area > i {
+            text-align: center;
+            line-height: 60px;
+            line-height: 3.75rem;
+            font-size: 18px;
+            font-size: 1.125rem;
+            color: #777; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .star-area > .hidden-area-star {
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -5%;
+            width: 600px;
+            width: 37.5rem;
+            height: 120px;
+            height: 7.5rem;
+            border: 1px solid #eed;
+            box-sizing: border-box;
+            background-color: #fff; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .star-area.action > i {
+            color: #f00; }
+        #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .hidden-area {
+          display: none;
+          position: absolute;
+          right: 20px;
+          right: 1.25rem;
+          bottom: 20px;
+          bottom: 1.25rem;
+          width: 400px;
+          width: 25rem;
+          height: 50px;
+          height: 3.125rem; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .hidden-area > .hidden-one {
+            float: left;
+            width: 40%;
+            height: 100%; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .hidden-area > .hidden-two {
+            float: left;
+            width: 60%;
+            height: 100%; }
+          #viewBox > .my-airplan-confirm > .high-area > .wrap-box > .hidden-area span {
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            line-height: 3.125rem;
+            font-size: 16px;
+            font-size: 1rem; }
+    #viewBox > .my-airplan-confirm > .low-area {
+      width: 100%;
+      height: 50%;
+      background-color: #fff; }
+      #viewBox > .my-airplan-confirm > .low-area > .wrap-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        padding: 1.25rem;
+        box-sizing: border-box; }
+        #viewBox > .my-airplan-confirm > .low-area > .wrap-box > .form-box {
+          float: left;
+          width: 16%;
+          height: 100%;
+          margin-right: 2%;
+          border-bottom: 2px solid #555;
+          box-sizing: border-box; }
+        #viewBox > .my-airplan-confirm > .low-area > .wrap-box form {
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+          #viewBox > .my-airplan-confirm > .low-area > .wrap-box form > fieldset {
+            width: 100%;
+            height: 100%;
+            margin: auto; }
+            #viewBox > .my-airplan-confirm > .low-area > .wrap-box form > fieldset > input {
+              float: left;
+              width: 80%;
+              height: 100%;
+              border: 0; }
+            #viewBox > .my-airplan-confirm > .low-area > .wrap-box form > fieldset > button {
+              float: right;
+              width: 20%;
+              height: 100%;
+              background-color: transparent; }
+              #viewBox > .my-airplan-confirm > .low-area > .wrap-box form > fieldset > button > i {
+                text-align: center;
+                font-size: 20px;
+                font-size: 1.25rem;
+                color: #777; }
+              #viewBox > .my-airplan-confirm > .low-area > .wrap-box form > fieldset > button > .icon-area {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                background-image: url("../../img/section/icon/main_icoset.png");
+                background-position: 21% 3%;
+                background-repeat: no-repeat;
+                background-size: auto 500%; }
+        #viewBox > .my-airplan-confirm > .low-area > .wrap-box > .confirm {
+          float: right;
+          width: 10%;
+          height: 100%;
+          background-color: #777; }
+          #viewBox > .my-airplan-confirm > .low-area > .wrap-box > .confirm > span {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            font-size: 1.25rem;
+            color: #fff; }
 
 #reserveBox {
   width: 100%;
